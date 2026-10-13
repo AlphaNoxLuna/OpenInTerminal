@@ -32,13 +32,17 @@ Check **OpenInTerminal-Lite** Docs: [English](./Resources/README-Lite.md) | [中
 
 ## Installation 🖥
 
-> ⚠️ **Important:** Signed builds are no longer provided for **OpenInTerminal**, **OpenInTerminal-Lite**, or **OpenInEditor-Lite**. Before using these apps, please either trust the unsigned binaries or sign them yourself. See the [Configuration](./Resources/README-Config.md) document for how to install and trust unsigned apps.
+This fork provides OpenInTerminal 2.3.10 with macOS 27 compatibility, Developer ID signing, and Apple notarization. Requires macOS 12 or later; supports Apple Silicon and Intel.
 
-```
-brew install --cask openinterminal
+Download `OpenInTerminal.zip` from this fork's [releases](https://github.com/AlphaNoxLuna/OpenInTerminal/releases), unzip it, move `OpenInTerminal.app` to `/Applications`, and launch it. Enable its Finder extension and add its icon using Finder's **Customize Toolbar**.
+
+If the Finder extension is unavailable, enable this fork's extension after installing and launching the app:
+
+```sh
+pluginkit -e use -i noxluna.app.OpenInTerminal.OpenInTerminalFinderExtension
 ```
 
-Or manually download it from [release](https://github.com/Ji4n1ng/OpenInTerminal/releases).
+`brew install --cask openinterminal` installs the [upstream project](https://github.com/Ji4n1ng/OpenInTerminal), rather than this fork. Lite apps remain upstream products. See [release build instructions](./Resources/README-Release.md) to build this fork.
 
 ## Configuration and FAQ ⚙️
 

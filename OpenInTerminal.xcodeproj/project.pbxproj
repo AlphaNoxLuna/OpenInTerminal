@@ -731,12 +731,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Q33U8R4U57;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -748,10 +748,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalCore;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminalCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -767,9 +768,9 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -781,9 +782,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalCore;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminalCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -801,7 +802,7 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminalFinderExtension/OpenInTerminalFinderExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalFinderExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -809,9 +810,9 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal.OpenInTerminalFinderExtension;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminal.OpenInTerminalFinderExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -828,7 +829,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalFinderExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -836,9 +837,9 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal.OpenInTerminalFinderExtension;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminal.OpenInTerminalFinderExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -855,16 +856,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -880,16 +881,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -903,16 +904,16 @@
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminalHelper/OpenInTerminalHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalHelper;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -927,16 +928,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = TNF68RJX25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.3.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalHelper;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.3.10;
+				PRODUCT_BUNDLE_IDENTIFIER = noxluna.app.OpenInTerminalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -948,6 +949,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -996,7 +998,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1010,6 +1012,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1052,7 +1055,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

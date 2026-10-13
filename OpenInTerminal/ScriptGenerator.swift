@@ -9,10 +9,10 @@
 import Foundation
 import OpenInTerminalCore
 
-/// Install AppleScripts to $HOME/Library/Application Scripts/wang.jianing.app.OpenInTerminalFinderExtension
+/// Install AppleScripts in the Finder extension's Application Scripts directory.
 func checkScripts() throws {
     guard var scriptFolderPath = try? FileManager.default.url(for: .applicationScriptsDirectory, in: .userDomainMask, appropriateFor: nil, create: true) else {
-        throw OITMError.cannotAccessPath("$HOME/Library/Application Scripts/wang.jianing.app.OpenInTerminal")
+        throw OITMError.cannotAccessPath("~/Library/Application Scripts/\(Constants.Id.FinderExtension)")
     }
     scriptFolderPath.deleteLastPathComponent()
     let finderExScriptPath = scriptFolderPath.appendingPathComponent(Constants.Id.FinderExtension)

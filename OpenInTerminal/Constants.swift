@@ -13,8 +13,8 @@ import OpenInTerminalCore
 struct Constants {
     
     struct Id {
-        static let LauncherApp = "wang.jianing.app.OpenInTerminalHelper"
-        static let FinderExtension = "wang.jianing.app.OpenInTerminal.OpenInTerminalFinderExtension"
+        static let LauncherApp = "noxluna.app.OpenInTerminalHelper"
+        static let FinderExtension = "noxluna.app.OpenInTerminal.OpenInTerminalFinderExtension"
         static let CustomAppCell = NSUserInterfaceItemIdentifier(rawValue: "customAppCell")
         static let CustomMenuCell = NSUserInterfaceItemIdentifier(rawValue: "customMenuCell")
         static let CustomInputViewController = "CustomInputViewController"

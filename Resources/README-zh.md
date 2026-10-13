@@ -33,11 +33,17 @@
 
 ## 安装 🖥
 
-```
-brew install --cask openinterminal
+此 fork 提供适配 macOS 27 的 OpenInTerminal 2.3.10，使用 Developer ID 签名并经过 Apple 公证。最低要求 macOS 12，同时支持 Apple Silicon 和 Intel。
+
+从本仓库的 [Releases](https://github.com/AlphaNoxLuna/OpenInTerminal/releases) 下载 `OpenInTerminal.zip`，解压后把 `OpenInTerminal.app` 移到 `/Applications` 并启动。启用 Finder 扩展，再通过 Finder 的「自定义工具栏」添加图标。
+
+如果未显示扩展，可在安装、启动应用后执行：
+
+```sh
+pluginkit -e use -i noxluna.app.OpenInTerminal.OpenInTerminalFinderExtension
 ```
 
-或者从 [release](https://github.com/Ji4n1ng/OpenInTerminal/releases) 中手动下载。
+`brew install --cask openinterminal` 安装的是[上游版本](https://github.com/Ji4n1ng/OpenInTerminal)，本次不包含 Lite 应用。自行打包请看[发布构建说明](./README-Release.md)。
 
 ## 配置和常见问题 ⚙️
 

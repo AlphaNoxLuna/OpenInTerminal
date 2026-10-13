@@ -10,15 +10,21 @@ import Cocoa
 import FinderSync
 import OpenInTerminalCore
 import Carbon
+import os.log
 
 class FinderSync: FIFinderSync {
     
     override init() {
         super.init()
         let finderSync = FIFinderSyncController.default()
+        // "/" covers every folder Finder can show. Mounted-volume URLs alone miss
+        // firmlinked locations such as /Users on recent macOS, so the extension
+        // never receives the toolbar or context menu for those folders.
+        var directoryURLs: Set<URL> = [URL(fileURLWithPath: "/", isDirectory: true)]
         if let mountedVolumes = FileManager.default.mountedVolumeURLs(includingResourceValuesForKeys: nil, options: [.skipHiddenVolumes]) {
-            finderSync.directoryURLs = Set<URL>(mountedVolumes)
+            directoryURLs.formUnion(mountedVolumes)
         }
+        finderSync.directoryURLs = directoryURLs
         // Monitor volumes
         let notificationCenter = NSWorkspace.shared.notificationCenter
         notificationCenter.addObserver(forName: NSWorkspace.didMountNotification, object: nil, queue: .main) { notification in
@@ -76,7 +82,9 @@ class FinderSync: FIFinderSync {
         default:
             break
         }
-        
+
+        let titles = menu.items.map { $0.title.isEmpty ? "-" : $0.title }.joined(separator: "|")
+        os_log("OITMenu kind=%{public}d count=%{public}d titles=%{public}@", type: .error, menuKind.rawValue, menu.items.count, titles)
         return menu
     }
     
@@ -124,7 +132,7 @@ class FinderSync: FIFinderSync {
         // menu that will be attached under a single top level item
         let itemsMenu = useSubmenu ? NSMenu(title: "") : menu
 
-        guard let terminal = DefaultsManager.shared.defaultTerminal else { return menu }
+        let terminal = DefaultsManager.shared.defaultTerminal ?? SupportedApps.terminal.app
         let terminalTitle = terminal.name
         let openInTerminalItem = NSMenuItem(title: terminalTitle,
                                             action: #selector(openDefaultTerminal),
@@ -133,7 +141,7 @@ class FinderSync: FIFinderSync {
         openInTerminalItem.image = terminalIcon
         itemsMenu.addItem(openInTerminalItem)
 
-        guard let editor = DefaultsManager.shared.defaultEditor else { return menu }
+        let editor = DefaultsManager.shared.defaultEditor ?? SupportedApps.textEdit.app
         let editorTitle = editor.name
         let openInEditorItem = NSMenuItem(title: editorTitle,
                                             action: #selector(openDefaultEditor),
@@ -202,6 +210,8 @@ class FinderSync: FIFinderSync {
     
     func open(_ app: App) {
         let urls = getSelectedPathsFromFinder()
+        os_log("OITOpen app=%{public}@ urls=%{public}d", type: .error, app.name, urls.count)
+        guard !urls.isEmpty else { return }
         do {
             try app.openInSandbox(urls)
         } catch {
